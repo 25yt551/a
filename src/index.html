@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="manifest" href="manifest.json" />
+    <title>Wormate Game</title>
+
+    <!-- CSS Libraries -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+    
+    <!-- JavaScript Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script>
+    
+    <!-- Game Script -->
+    <script type="module" src="./app.ts"></script>
+  </head>
+  <body>
+    <div class="game-container">
+      <div class="game-header">
+        <h1>Wormate</h1>
+        <div class="score-container">
+          <span>Score: </span>
+          <span id="score">0</span>
+        </div>
+      </div>
+      <div class="game-wrapper">
+        <canvas id="canvas"></canvas>
+      </div>
+      <div class="game-controls">
+        <button id="startGame">Start Game</button>
+        <button id="pauseGame">Pause</button>
+        <button id="fullscreenBtn">Full Screen</button>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "2D Test Game",
+  "version": "1.0.0",
+  "description": "A 2D test game built with modern web technologies",
+  "action": {
+    "default_popup": "index.html"
+  },
+  "permissions": []
+} 
